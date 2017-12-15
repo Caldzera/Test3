@@ -7,8 +7,31 @@
 	overflow-y: scroll;
 	overflow-x: hidden;
 	background-color: rgb(238, 238, 238);
+	
 }
 
 .divTextAreaInner {
 	margin-left: 10px;
+
+}
+
+.btn {
+	background-color: #00802f;
+	position: center;
+	
+}
+
+.eingabefeld {
+	background-color: rgb(238, 238, 238);
+}
+
+.nachrichten {
+	position: center;
+	margin-top: 3em;
+}
+.knopf {
+	width: 100px;
+	display: center;
+	margin-left: auto;
+	margin-right: auto;
 }

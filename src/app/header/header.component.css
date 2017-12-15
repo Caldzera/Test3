@@ -1,17 +1,21 @@
 
 
 .header {
-	background-color: #00802F;
+	background-color: white;
 	text-align: center;
 	margin: auto;
 	vertical-align: center;
+	border-bottom: 1px solid lightslategrey;
 }
-
 
 .logo {
 	position: relative;
-    	margin-left: auto;
+    	margin-left: 140px;
     	z-index: 100;
-    	vertical-align: middle;
+        vertical-align: middle;
+        margin-top: 6px;
 }
 
+.text {
+	margin-left: 100px;
+}

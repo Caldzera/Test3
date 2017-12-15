@@ -35,14 +35,14 @@ this.nickname = this.cookieService.get('nickname');
 
 }
 
-public addMessage(message: string): void {
+public addMessage(message: string, nickname: string): void {
 
-if (!this.nickname) {
+if (nickname) {
 alert('Gib einen Nickname ein!');
 	
 } else {
 
-	if (!this.chatMessage.message) {
+	if (message) {
 	alert('Gib eine Nachricht ein!');
 	
 	} else {
