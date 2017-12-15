@@ -43,18 +43,18 @@ alert('Gib einen Nickname ein!');
 	
 } else {
 
-	if (message) {
+	/*if (message) {
 	alert('Gib eine Nachricht ein!');
 	
 	} else {
-					
+	*/				
 		this.formattedmessage = 'Am ' + new Date().toLocaleDateString() + ' um ' + new Date().toLocaleTimeString() + ' schrieb <b>' + this.nickname + ':</b><br><br>' + message + '<br><br>';	// Nachricht formatieren mit nick und timestamp
 		this.messageHistory += this.formattedmessage;			// Eigene Nachricht zur messageHistory hinzufuegen
 		this.chatService.sendTrans(this.formattedmessage);		// Nachricht an Server schicken
 		this.chatMessage.message = ''; 					// Eingabefeld resetten
 		this.cookieService.set( 'nickname', this.nickname, new Date('12/2/2019 03:05:01 PM GMT-0600'));		// Nickname in einem Cookie abspeichern
 			
-		}
+		//}
 	}
 }
 }
