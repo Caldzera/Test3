@@ -37,14 +37,23 @@ this.nickname = this.cookieService.get('nickname');
 
 public addMessage(message: string, nickname: string): void {
 
+<<<<<<< HEAD
 	if(message){
 if (nickname) {
+=======
+if (!this.nickname) {
+>>>>>>> d3707d64cb604dff598a0422ab68acd58d018a40
 alert('Gib einen Nickname ein!');
 	
 } else {
 
+<<<<<<< HEAD
 	/*if (message) {
 	alert('Gib eine Nachricht ein!');
+=======
+	if (!this.chatMessage.message) {
+	
+>>>>>>> d3707d64cb604dff598a0422ab68acd58d018a40
 	
 	} else {
 	*/				
