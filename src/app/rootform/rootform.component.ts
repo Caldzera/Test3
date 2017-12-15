@@ -38,7 +38,7 @@ this.nickname = this.cookieService.get('nickname');
 public addMessage(message: string, nickname: string): void {
 
 	if(message){
-if (nickname) {
+if (!nickname) {
 alert('Gib einen Nickname ein!');
 	
 } else {
