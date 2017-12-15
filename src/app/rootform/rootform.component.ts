@@ -25,6 +25,15 @@ constructor(private chatService: TranssocketService, private cookieService: Cook
 
   ngOnInit() {
 
+
+//Eingabefeld am Anfang falls kein Username im Cookie gespeichert ist
+if(!this.cookieService.get('nickname') || this.cookieService.get('nickname')==null){
+	do{
+	  this.cookieService.set('nickname', prompt("Bitte gib ein Benutzernamen ein"));
+	}while(!this.cookieService.get('nickname') || this.cookieService.get('nickname')==null);
+  }
+
+
 this.chatService							// Hier lauschen wir auf Nachrichten des Servers
         .getTrans()
         .subscribe(msg => {
