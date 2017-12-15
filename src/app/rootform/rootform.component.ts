@@ -43,10 +43,9 @@ alert('Gib einen Nickname ein!');
 } else {
 
 	if (!this.chatMessage.message) {
-	alert('Gib eine Nachricht ein!');
+	
 	
 	} else {
-		alert('Gib ne Nachricht ein')
 					
 		this.formattedmessage = 'Am ' + new Date().toLocaleDateString() + ' um ' + new Date().toLocaleTimeString() + ' schrieb <b>' + this.nickname + ':</b><br><br>' + message + '<br><br>';	// Nachricht formatieren mit nick und timestamp
 		this.messageHistory += this.formattedmessage;			// Eigene Nachricht zur messageHistory hinzufuegen
